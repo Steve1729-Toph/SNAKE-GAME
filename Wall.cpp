@@ -2,8 +2,8 @@
 class Wall{
 public:
 void header(){
-    int x = 50, y = 5;
-    while(x < 151){
+    int x =___ , y = ___;
+    while(x < ___){
         gotoxy(x,y);
         printf("%c",219);
         printf("%c",219);
@@ -11,8 +11,8 @@ void header(){
     }
 }
 void footer(){
-    int x = 50, y = 35;
-    while(x < 151){
+    int x =___ , y = ___;
+    while(x < ___){
         gotoxy(x,y);
         printf("%c",219);
         printf("%c",219);
@@ -20,7 +20,7 @@ void footer(){
     }
 }
 void left(){
-    int x = 50, y = 5;
+    int x = ___, y =___ ;
     while(y < 35){
         gotoxy(x,y);
         printf("%c",219);
@@ -29,8 +29,8 @@ void left(){
     }
 }
 void right(){
-    int x = 151, y = 5;
-    while(y <= 35){
+    int x =___ , y =___ ;
+    while(y <= ___){
         gotoxy(x,y);
         printf("%c",219);
         printf("%c",219);
@@ -38,7 +38,6 @@ void right(){
     }
 }
 void Draw_Wall(){
-    SetColor(7);
     Draw_Wall_header();
     Draw_Wall_footer();
     Draw_Wall_left();
