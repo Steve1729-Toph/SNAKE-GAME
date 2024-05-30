@@ -1,36 +1,17 @@
 #include <iostream>
 #include <cmath>
 
-class NODE {
-public:
-    double x;
-    double y;
-    double z;
-    NODE* next;
-    NODE(double a, double b, double c) : x(a), y(b), z(c), next(nullptr) {}
-};
+
 
 typedef NODE* node;
 
-class list {
-public:
-    node head;
-    node tail;
-    list() : head(nullptr), tail(nullptr) {}
-
-    void insertNodeAtTail(double _a, double _b, double _c) {
-        node Node = new NODE(_a, _b, _c);
-        if (this->head == nullptr) {
-            this->head = Node;
+c
         } else {
             this->tail->next = Node;
         }
         this->tail = Node;
     }
 
-    void free_singly_linked_list() {
-        node current = head;
-        while (current) {
             node temp = current;
             current = current->next;
             delete temp;
@@ -43,25 +24,10 @@ bool compareNodes(node a, node b) {
     return (std::abs(a->x - b->x) < epsilon && std::abs(a->y - b->y) < epsilon && std::abs(a->z - b->z) < epsilon);
 }
 
-void run() {
-    list ds_a;
-    int n;
-    std::cin >> n;
-    for (int i = 0; i < n; ++i) {
+void run() { n; ++i) {
         double x, y, z;
         std::cin >> x >> y >> z;
-        ds_a.insertNodeAtTail(x, y, z);
-    }
-
-    list ds_b;
-    int m;
-    std::cin >> m;
-    for (int i = 0; i < m; ++i) {
-        double x, y, z;
-        std::cin >> x >> y >> z;
-        ds_b.insertNodeAtTail(x, y, z);
-    }
-
+        ds_a.i
     // node tmp1 = ds_a.head;
     node tmp2 = ds_b.head;
     for (int i = 0; i < m; ++i) {
