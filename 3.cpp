@@ -2,6 +2,8 @@ bool touch(SNAKE& , int& , int&){
     for(int i = 0; i < ?.len; ++i){
         if( ?== a[i].x &&  == .a[i].y)
             return true;
+        một hai ba bốn năm sáu
+        
     }
     return false;
 }
