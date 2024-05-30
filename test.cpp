@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cmath>
-
+//sua thu cho nay nhe
+//
 class NODE {
 public:
     double x;
