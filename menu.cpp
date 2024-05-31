@@ -1,3 +1,6 @@
+void SetColor(int color) {
+    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), color);
+}
 void INIT_MENU(){
     SetColor(6);
     gotoxy(80,12);
