@@ -1,6 +1,3 @@
-void SetColor(int color) {
-    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), color);
-}
 void INIT_MENU(){
     SetColor(6);
     gotoxy(80,12);
@@ -46,6 +43,9 @@ void MENU_SNAKE(int& check){
     else if (check == 2) menu2();
     else if (check == 3) menu3();
     else if (check == 4) menu4();
+}
+void SetColor(int color) {
+    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), color);
 }
 void delete_MENU_down(int check){
     if(check == 1) {
