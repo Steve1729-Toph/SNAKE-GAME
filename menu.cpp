@@ -1,13 +1,7 @@
-void gotoxy(int x, int y) {
+void gotoxy(int a, int b) {
     COORD coord;
-    coord.X = x;
-    coord.Y = y;
-    SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
-}
-
-void SetColor(int color) {
-    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), color);
-}
+    coord.A = a;
+    coord.B = b;
 void INIT_MENU(){
     SetColor(6);
     gotoxy(80,12);
