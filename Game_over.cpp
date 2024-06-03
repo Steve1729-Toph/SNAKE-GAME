@@ -12,10 +12,10 @@ bool check_touch_snake(SNAKE& snake){
     return false;
 }
 void GAMEOVER(){
-    SetColor(7); //6
-    gotoxy(200,51); //50,5
+    SetColor(6);
+    gotoxy(50,5);
    cout << "#####   ###     #   #   #####  ##### ##    ## ##### ######"; 
-    gotoxy(200,52); //50,6
+    gotoxy(50,6); 
     cout << "## __  #   #   ### ###  ##__   #   #  ##  ##  ##___ ##__##";
     gotoxy(50,7);
     cout << "##  #  #####   #  #  #  ##     #   #   #  #   ##    ##  ##";
