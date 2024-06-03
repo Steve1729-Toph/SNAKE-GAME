@@ -1,7 +1,3 @@
-void gotoxy(int a, int b) {
-    COORD coord;
-    coord.A = a;
-    coord.B = b;
 void INIT_MENU(){
     SetColor(6);
     gotoxy(80,12);
