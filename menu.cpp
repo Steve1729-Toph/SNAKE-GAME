@@ -9,14 +9,14 @@ void INIT_MENU(){
     gotoxy(80,15);
     cout << "EXIT";
 }
-void menu1(){
+void m1(){
     SetColor(11);
     gotoxy(77,12);
     cout << ">> ";
     gotoxy(86,12);
     cout << " <<";
 }
-void menu2(){
+void m2(){
     SetColor(10);
     gotoxy(77,13);
     cout << ">> ";
@@ -24,14 +24,14 @@ void menu2(){
     cout << " <<";
 
 }
-void menu3(){
+void m3(){
     SetColor(9);
     gotoxy(77,14);
     cout << ">> ";
     gotoxy(87,14);
     cout << " <<";
 }
-void menu4(){
+void m4(){
     SetColor(8);
     gotoxy(77,15);
     cout << ">> ";
@@ -39,13 +39,10 @@ void menu4(){
     cout << " <<";
 }
 void MENU_SNAKE(int& check){
-    if (check == 1) menu1();
-    else if (check == 2) menu2();
-    else if (check == 3) menu3();
-    else if (check == 4) menu4();
-}
-void SetColor(int color) {
-    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), color);
+    if (check == 1) m1();
+    else if (check == 2) m2();
+    else if (check == 3) m3();
+    else if (check == 4) m4();
 }
 void delete_MENU_down(int check){
     if(check == 1) {
